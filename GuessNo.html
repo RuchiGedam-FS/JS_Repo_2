@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+</head>
+<body style="text-align: center;">
+    
+    <input id="inputFiled" type=text />
+        <input type="submit" value="Submit" onclick="check()">
+   
+    <p id="random" style="font-size:40px"></p> <!--displaying output-->
+    
+    
+    <script>
+          
+   // Get a random integer from 1 to 10 
+   function check() 
+   {
+    var num = Math.floor((Math.random() * 10) + 1);
+    
+      var gnum = document.getElementById('inputFiled').value;
+        if (gnum === num)
+           { 
+            document.getElementById('random').innerHTML = "Good Work";
+           } 
+        else
+           {
+            document.getElementById('random').innerHTML = "Good Work";
+           } 
+   }
+    </script>
+</body>
+</html>
